@@ -1,4 +1,7 @@
 .container {
+    background-color: #006ba0;
+    border-bottom: 25px solid #1d8fbc;
+    height: 720px;
 
     .header {
         display: flex;
@@ -137,6 +140,7 @@
 
 @media only screen and (max-width: 1308px) {
     .container {
+        height: 820px;
 
         .content {
 
@@ -181,6 +185,8 @@
 
 @media only screen and (max-width: 650px) {
     .container {
+        height: 1000px;
+
         .header {
             border-bottom: 0.5px solid #48a1ce;
             padding-bottom: 20px;

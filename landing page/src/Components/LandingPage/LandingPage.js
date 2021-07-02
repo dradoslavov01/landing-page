@@ -1,19 +1,23 @@
 import style from './LandingPage.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, useHistory} from 'react-router-dom';
 
 import logo from '../../assets/logo.png';
 import banner from '../../assets/banner.png';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
+import { Input } from '@material-ui/core';
 
 
 const LandingPage = () => {
-
+    const emailValidationRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+    const history = useHistory();
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
-        const input = e.target.email.value;
 
-        if (input === '') {
+        if (emailValidationRegex.test(e.target.email.value)) {
+            history.push('/request')
+            
+        } else {
             alert('Enter a valid Business Email to continue.');
         }
     }

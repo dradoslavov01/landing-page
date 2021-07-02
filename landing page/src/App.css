@@ -4,21 +4,3 @@
   padding: 0;
 
 }
-
-.App {
-  background-color: #006ba0;
-  border-bottom: 25px solid #1d8fbc;
-  height: 720px;
-}
-
-@media only screen and (max-width: 1308px) {
-  .App {
-    height: 820px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .App {
-    height: 1000px;
-  }
-}
