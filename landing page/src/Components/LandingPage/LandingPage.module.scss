@@ -50,7 +50,6 @@
 
     .content {
         display: flex;
-        align-items: center;
         justify-content: space-evenly;
         margin-top: 100px;
 
@@ -108,12 +107,79 @@
                 height: 450px;
             }
         }
+
+        .message {
+            margin-top: 40px;
+            width: 470px;
+            background-color: #1d8fbc;
+            padding: 20px;
+            border: 3px solid #69a6ee;
+            border-radius: 8px;
+
+            .quoteIcon {
+                transform: rotate(180deg);
+                font-size: 35px;
+                margin-bottom: -20px;
+            }
+
+            p {
+                width: 380px;
+                color: white;
+                font-size: 18px;
+                line-height: 28px;
+                font-style: italic;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 1308px) {
+    .container {
+
+        .content {
+
+            .description {
+                flex-direction: column;
+
+                input {
+                    width: 320px;
+                    border-radius: 8px;
+                    height: 40px;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    width: 320px;
+                    border-radius: 8px;
+                    height: 40px;
+
+                }
+            }
+
+            .banner {
+                img {
+                    width: 450px;
+                    height: 350px;
+                }
+            }
+
+            .message {
+                width: 320px;
+
+                p {
+                    width: 230px;
+                }
+            }
+        }
+
     }
 
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .container {
         .header {
             border-bottom: 0.5px solid #48a1ce;
@@ -126,9 +192,11 @@
         }
 
         .content {
+            align-items: center;
             flex-direction: column;
             margin-right: 40px;
             margin-top: 50px;
+
             .description {
                 margin-left: 50px;
 
@@ -155,6 +223,17 @@
                     height: 42px;
                     margin-top: 20px;
                 }
+
+                .message {
+                    position: absolute;
+                    bottom: -250px;
+                    width: 320px;
+
+                    p {
+                        width: 230px;
+                        font-size: 18px;
+                    }
+                }
             }
 
             .banner {
@@ -167,6 +246,8 @@
                     margin-top: 40px;
                 }
             }
+
+
         }
 
     }
