@@ -12,13 +12,14 @@
             flex-direction: row;
             justify-content: flex-end;
             list-style: none;
-            width: 600px;
+            width: 700px;
 
             li {
-                margin-right: 20px;
+                margin-right: 23px;
+
                 a {
                     font-weight: 400;
-                    opacity:  .8;
+                    opacity: .8;
                     font-size: 18px;
 
                     &:hover {
@@ -41,13 +42,133 @@
             img {
                 height: 48px;
                 margin-right: 10px;
-            }
-
-            &:hover {
                 cursor: pointer;
             }
 
         }
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 100px;
+
+        .description {
+            color: white;
+            margin-left: 150px;
+
+            h1 {
+                width: 400px;
+                font-size: 45px;
+            }
+
+            p {
+                font-size: 30px;
+                width: 400px;
+                margin-top: 30px;
+            }
+
+            input {
+                margin-top: 30px;
+                border-radius: 8px 0 0 8px;
+                height: 50px;
+                width: 250px;
+                border-color: #ff862f;
+                border-style: double;
+                padding-left: 12px;
+                font-size: 16px;
+                outline: none;
+            }
+
+            button {
+                height: 50px;
+                background-color: #ff862f;
+                color: #fff;
+                border: none;
+                border-radius: 0 6px 6px 0;
+                padding: 10px 10px;
+                font-size: 19px;
+                font-weight: 550;
+                cursor: pointer;
+                margin: 0 0 0 -2px;
+
+                &:hover {
+                    background-color: #69a6ee;
+                }
+            }
+
+        }
+
+        .banner {
+            margin-right: 140px;
+
+            img {
+                width: 550px;
+                height: 450px;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        .header {
+            border-bottom: 0.5px solid #48a1ce;
+            padding-bottom: 20px;
+            justify-content: center;
+
+            ul {
+                display: none;
+            }
+        }
+
+        .content {
+            flex-direction: column;
+            margin-right: 40px;
+            margin-top: 50px;
+            .description {
+                margin-left: 50px;
+
+                h1 {
+                    width: 300px;
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 25px;
+                    width: 330px;
+                    margin-top: 30px;
+                }
+
+                input {
+                    width: 320px;
+                    border-radius: 8px;
+                    height: 40px;
+                }
+
+                button {
+                    width: 320px;
+                    border-radius: 8px;
+                    height: 42px;
+                    margin-top: 20px;
+                }
+            }
+
+            .banner {
+                margin-right: 0px;
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                    margin-left: 50px;
+                    margin-top: 40px;
+                }
+            }
+        }
+
     }
 
 }
